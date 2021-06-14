@@ -1,0 +1,3081 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "word chain game",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": [
+                      "WordChain cancel"
+                  ]
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": [
+                      "help",
+                      "wordchain please help",
+                      "wordchain help"
+                  ]
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": [
+                      "stop",
+                      "wordchain stop"
+                  ]
+              },
+              {
+                  "name": "ContinueGame",
+                  "slots": [
+                      {
+                          "name": "country",
+                          "type": "COUNTRIESANIMALS"
+                      }
+                  ],
+                  "samples": [
+                      " {country}"
+                  ]
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.FallbackIntent",
+                  "samples": []
+              },
+              {
+                  "name": "PlayGame",
+                  "slots": [],
+                  "samples": [
+                      "start game",
+                      "play",
+                      "lets play",
+                      "new game",
+                      "start a game"
+                  ]
+              },
+              {
+                  "name": "AMAZON.StartOverIntent",
+                  "samples": []
+              },
+              {
+                  "name": "RestartGame",
+                  "slots": [],
+                  "samples": [
+                      "wordchain restart please",
+                      "wordchain new ",
+                      "wordchain restart"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "COUNTRIES",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "Myanmar"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Afghanistan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Albania"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Algeria"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Andorra"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Angola"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Antigua & Deps"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Argentina"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Armenia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Australia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Austria"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Azerbaijan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bahamas"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bahrain"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bangladesh"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Barbados"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Belarus"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Belgium"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Belize"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Benin"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bhutan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bosnia Herzegovina"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Botswana"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Brazil"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Brunei"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bulgaria"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Burkina"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Burundi"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cambodia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cameroon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Canada"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cape Verde"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Central African Rep"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Chad"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Chile"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "China"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Colombia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Comoros"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Congo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Congo {Democratic Rep}"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Costa Rica"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Croatia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cuba"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cyprus"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Czech Republic"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Denmark"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Djibouti"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dominica"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dominican Republic"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "East Timor"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ecuador"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Egypt"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "El Salvador"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Equatorial Guinea"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Eritrea"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Estonia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ethiopia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Fiji"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Finland"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "France"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gabon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gambia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Georgia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Germany"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ghana"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Greece"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Grenada"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Guatemala"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Guinea"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Guinea-Bissau"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Guyana"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Haiti"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Honduras"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hungary"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Iceland"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "India"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Indonesia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Iran"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Iraq"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ireland {Republic}"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Israel"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Italy"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ivory Coast"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Jamaica"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Japan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Jordan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kazakhstan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kenya"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kiribati"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Korea North"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Korea South"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kosovo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kuwait"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kyrgyzstan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Laos"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Latvia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lebanon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lesotho"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Liberia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Libya"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Liechtenstein"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lithuania"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Luxembourg"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Macedonia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Madagascar"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Malawi"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Malaysia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Maldives"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mali"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Malta"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Marshall Islands"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mauritania"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mauritius"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mexico"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Micronesia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Moldova"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Monaco"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mongolia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Montenegro"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Morocco"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mozambique"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Namibia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Nauru"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Nepal"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Netherlands"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "New Zealand"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Nicaragua"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Niger"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Nigeria"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Norway"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Oman"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Pakistan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Palau"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Panama"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Papua New Guinea"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Paraguay"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Peru"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Philippines"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Poland"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Portugal"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Qatar"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Romania"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Russian Federation"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Rwanda"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "St Kitts & Nevis"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "St Lucia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Saint Vincent & the Grenadines"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Samoa"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "San Marino"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sao Tome & Principe"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Saudi Arabia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Senegal"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Serbia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Seychelles"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sierra Leone"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Singapore"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Slovakia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Slovenia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Solomon Islands"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Somalia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "South Africa"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "South Sudan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Spain"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sri Lanka"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sudan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Suriname"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Swaziland"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sweden"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Switzerland"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Syria"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Taiwan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tajikistan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tanzania"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Thailand"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Togo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tonga"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Trinidad & Tobago"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tunisia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Turkey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Turkmenistan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tuvalu"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Uganda"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ukraine"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "United Arab Emirates"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "United Kingdom"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "United States"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Uruguay"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Uzbekistan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Vanuatu"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Vatican City"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Venezuela"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Vietnam"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Yemen"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Zambia"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Zimbabwe"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Aardvark"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Aardwolf"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Albatross"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Alligator"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Alpaca"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Amphibian"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Anaconda"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Angelfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Anglerfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ant"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Anteater"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Antelope"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Antlion"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ape"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Aphid"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Arctic Fox"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Arctic Wolf"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Armadillo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Arrow crab"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Asp"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Baboon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Badger"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bald eagle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bali cattle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bandicoot"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Barnacle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Barracuda"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Basilisk"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bass"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bear"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Beaver"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bedbug"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bee"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Beetle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bird"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bison"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Black panther"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Black widow spider"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Blackbird"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Blue bird"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Blue jay"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Blue whale"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Boa"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Boar"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bobcat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bobolink"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bonobo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Booby"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bovid"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Box jellyfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Buffalo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Bug"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Butterfly"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Buzzard"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Camel"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Canary"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Canid"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Canidae"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Capybara"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cardinal"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Caribou"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Carp"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Caterpillar"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Catfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Catshark"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cattle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Centipede"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cephalopod"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Chameleon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cheetah"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Chickadee"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Chicken"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Chicken breeds"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Chimpanzee"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Chinchilla"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Chipmunk"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cicada"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Clam"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Clownfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cobra"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cockroach"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cod"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Condor"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Constrictor"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Coral"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cougar"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cow"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Coyote"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Crab"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Crane"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Crane fly"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Crawdad"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Crayfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cricket"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Crocodile"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Crow"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cuckoo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Damselfly"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Deer"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dingo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dinosaur"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dog"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dolphin"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Donkey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dormouse"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dove"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dragon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dragonfly"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Duck"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Eagle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Earthworm"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Earwig"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Echidna"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Eel"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Egret"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Elephant"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Elephant seal"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Elk"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Emu"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "English pointer"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ermine"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Falcon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Felidae"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ferret"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Finch"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Firefly"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Fish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Flamingo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Flea"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Fly"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Flyingfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Fowl"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Fox"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Frog"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Fruit bat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Galliform"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gamefowl"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gayal"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gazelle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gecko"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gerbil"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gibbon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gila monster"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Giraffe"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Goat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Goldfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Goose"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gopher"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gorilla"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Grasshopper"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Grouse"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Guan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Guanaco"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Guinea pig"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Guineafowl"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gull"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Guppy"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Haddock"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Halibut"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hamster"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hare"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Harrier"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hawk"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hedgehog"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hermit crab"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Heron"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Herring"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hippopotamus"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hookworm"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hornet"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Horse"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hoverfly"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hummingbird"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hyena"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Iguana"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Impala"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Jackal"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Jaguar"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Jay"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Jellyfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Junglefowl"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kangaroo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kangaroo rat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kingfisher"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kite"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kiwi"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Koala"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Koi"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Krill"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lab rat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ladybug"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lama"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lamprey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Land snail"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Landfowl"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lark"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Leech"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lemming"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lemur"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Leopard"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Leopon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Limpet"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lion"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lizard"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lobster"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Locust"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Loon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Louse"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lungfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lynx"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Macaw"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mackerel"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Magpie"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mammal"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Manatee"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mandrill"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Manta ray"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Marlin"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Marmoset"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Marmot"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Marsupial"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Marten"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mastodon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Meadowlark"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Meerkat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mink"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Minnow"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mite"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mockingbird"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mole"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mollusk"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mongoose"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Monkey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Moose"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mosquito"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Moth"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mouse"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mule"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Muskox"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Narwhal"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Newt"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Nightingale"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ocelot"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Octopus"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Opossum"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Orangutan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Orca"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ostrich"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Otter"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Owl"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ox"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Panda"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Panther"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Panthera"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Parakeet"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Parrot"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Parrotfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Partridge"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Peacock"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Peafowl"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Pelican"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Penguin"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Perch"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Pheasant"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Pig"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Pigeon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Pike"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Pilot whale"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Pinniped"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Piranha"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Planarian"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Platypus"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Polar bear"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Pony"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Porcupine"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Porpoise"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Possum"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Prairie dog"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Prawn"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Praying mantis"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Primate"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ptarmigan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Puffin"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Puma"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Python"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Quail"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Quelea"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Quokka"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Rabbit"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Raccoon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Rainbow trout"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Rat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Rattlesnake"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Raven"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Ray"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Red panda"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Reindeer"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Reptile"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Rhinoceros"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Right whale"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Roadrunner"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Robin"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Rodent"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Rook"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Rooster"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Roundworm"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sailfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Salamander"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Salmon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sawfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Scale insect"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Scallop"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Scorpion"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sea lion"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Seahorse"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Shark"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sheep"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Shrew"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Shrimp"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Silkmoth"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Silkworm"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Silverfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Skink"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Skunk"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sloth"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Slug"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Smelt"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Snail"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Snake"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Snipe"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sole"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sparrow"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sperm whale"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Spider"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Spider monkey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Spoonbill"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Squid"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Squirrel"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Starfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Steelhead trout"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Stingray"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Stoat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Stork"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sturgeon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sugar glider"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Swallow"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Swan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Swift"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Swordfish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Swordtail"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tahr"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Takin"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tapir"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tarantula"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tarsier"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tasmanian devil"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Termite"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tern"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Thrush"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tick"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tiger"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tiger shark"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tiglon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Toad"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tortoise"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Toucan"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tree frog"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Trout"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tuna"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Turkey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Turtle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tyrannosaurus"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Urial"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Vicuna"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Viper"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Vole"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Vulture"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Wallaby"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Walrus"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Warbler"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Wasp"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Water Boa"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Water buffalo"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Weasel"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Whale"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Whippet"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Whitefish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Whooping crane"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Wildcat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Wildebeest"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Wildfowl"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Wolf"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Wolverine"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Wombat"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Woodpecker"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Worm"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Wren"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "X-ray fish"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Xerinae"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Yak"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Yellow perch"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Zebra"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Zebra finch"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

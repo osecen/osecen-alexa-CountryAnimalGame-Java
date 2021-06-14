@@ -4,7 +4,7 @@
 
 You can easily extend the functionality by adding more words into the game.
 
-I suggest to use Node.js unless you have backend Java code you have to use for your skill. 
+In general, Alexa support for Node.js is much better than Java so consider using Node.js or Python to develope your Alexa skills unless you have backend Java code you have to use for your skill, in which case you will have to use Java.
  
 <img align="center" src="https://user-images.githubusercontent.com/81345268/121832232-9b25b600-cc97-11eb-8c77-579a3cfd2112.jpg" alt="java" width="200" height="200"/>
 
